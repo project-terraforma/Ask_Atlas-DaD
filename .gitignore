@@ -1,0 +1,13 @@
+# Data files
+data/metrics/
+*.parquet
+
+# Python
+__pycache__/
+*.pyc
+.env
+.venv/
+
+# IDE
+.vscode/
+.DS_Store
