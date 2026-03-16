@@ -14,12 +14,9 @@ This project explores how large geospatial datasets can be more accessible throu
 # Ask Atlas
 ### Natural Language Q&A for Geospatial Data
 
-![Python](https://img.shields.io/badge/Python-3.11-blue)
-![DuckDB](https://img.shields.io/badge/Database-DuckDB-yellow)
-![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-blue)
-![OpenAI](https://img.shields.io/badge/LLM-OpenAI-green)
-![Ollama](https://img.shields.io/badge/LLM-Ollama-orange)
-![License](https://img.shields.io/badge/License-MIT-lightgrey)
+## Technologies Used
+
+Python, DuckDB, PostgreSQL (Neon), OpenAI API, and Ollama.
 
 Ask Atlas is a **natural language interface for querying geospatial data** from the **Overture Maps metrics dataset**.
 
