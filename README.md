@@ -191,10 +191,8 @@ Query Result Sample:
 There are 37 unique countries represented in the addresses dataset.
 ```
 
-*(You can add screenshots of your system output here)*
-
 ```
-docs/Screenshot 2026-03-16 at 3.04.35 PM.jpg
+![Example Output](docs/Screenshot 2026-03-16 at 3.04.35 PM.jpg)
 ```
 
 ---
