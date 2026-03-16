@@ -174,23 +174,24 @@ Below is an example interaction with the system.
 ### User Question
 
 ```
-How many restaurants are in Europe?
+How many unique countries are represented in the addresses dataset?
 ```
 
 ### Generated SQL
 
 ```sql
-SELECT place_countries, SUM(total_count)
-FROM overture_metrics
-WHERE theme='places'
-AND primary_category='restaurant'
-GROUP BY place_countries;
+SELECT COUNT(DISTINCT country) AS unique_countries FROM metrics_addresses_clean;
+
+Query Result Sample:
+
+   unique_countries
+0                37
 ```
 
 ### Final Answer
 
 ```
-The dataset contains 2,145,392 restaurants across European countries.
+There are 37 unique countries represented in the addresses dataset.
 ```
 
 *(You can add screenshots of your system output here)*
