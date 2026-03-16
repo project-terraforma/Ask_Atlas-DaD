@@ -1,6 +1,8 @@
 # Ask_Atlas-DaD
 Project B: Dashboards Are Dead
 
+Project Slides: https://docs.google.com/presentation/d/1zDJWwzSnZ9t1iBThVYQUE3SgNzYnuxIodDpOOpU531E/edit?usp=sharing
+
 ## Team Members
 
 Arpana Koilada and Veda Janga
@@ -339,13 +341,6 @@ Possible extensions include:
 - integrating map-based outputs  
 - supporting real-time geospatial queries  
 - deploying the system as a web application  
-
----
-
-## Contributors
-
-- Arpana Koilada  
-- Veda Janga  
 
 ---
 
