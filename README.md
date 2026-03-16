@@ -21,12 +21,6 @@ This project explores how large geospatial datasets can be more accessible throu
 
 Ask Atlas is a **natural language interface for querying geospatial data** from the **Overture Maps metrics dataset**.
 
-The system allows users to ask questions like:
-
-- *How many restaurants are in Europe?*
-- *Which country has the most addresses?*
-- *How has the number of road segments changed over time?*
-
 The project explores **two different AI data architectures**:
 
 1. **DuckDB + RAG pipeline**
@@ -36,7 +30,7 @@ and compares how well each approach answers analytical questions.
 
 ---
 
-# Project Motivation
+## Project Motivation
 
 The **Overture Maps dataset** contains large-scale global geospatial data including:
 
@@ -53,28 +47,31 @@ This project demonstrates how **LLMs can act as a natural language interface for
 
 ---
 
-# Example Questions
+## Example Questions
 
 Users can ask questions such as:
 
 ```
-How many restaurants are in Europe?
-Which country has the most addresses?
-How has the number of road segments changed over time?
-How many buildings have height data?
+What is the total number of address records?						
+How many unique countries are represented in the addresses dataset?			
+Which datasets or sources contribute the most address records, and what are their counts?
+Which countries have the most address records with postal_city populated?
+What is the count of address records per `change_type` (unchanged/added/removed/data_changed) for the latest release?
+Top 5 `address_level_2` regions by total `id_count`?
+Track total_geometry_area_km2 over releases for theme='base' AND type='water'.
 ```
 
 The system translates these questions into **database queries and natural language answers**.
 
 ---
 
-# Architecture Overview
+## Architecture Overview
 
 The project explores **two different system designs**.
 
 ---
 
-# 1️⃣ DuckDB + RAG Pipeline
+## DuckDB + RAG Pipeline
 
 This approach focuses on **retrieval-augmented generation (RAG)** using local analytics.
 
@@ -119,7 +116,7 @@ Natural Language Answer
 
 ---
 
-# 2️⃣ Neon PostgreSQL + LLM SQL Generation
+## Neon PostgreSQL + LLM SQL Generation
 
 The second system focuses on **structured query generation using an LLM**.
 
@@ -167,7 +164,7 @@ Natural Language Answer
 
 ---
 
-# Example Output
+## Example Output
 
 Below is an example interaction with the system.
 
@@ -197,12 +194,12 @@ There are 37 unique countries represented in the addresses dataset.
 *(You can add screenshots of your system output here)*
 
 ```
-docs/images/example_query.png
+docs/Screenshot 2026-03-16 at 3.04.35 PM.jpg
 ```
 
 ---
 
-# Key Challenges
+## Key Challenges
 
 ### Complex Dataset Structure
 
@@ -270,7 +267,7 @@ Guardrails were added to reduce hallucinated queries.
 
 ---
 
-# Tech Stack
+## Tech Stack
 
 ### Languages
 
@@ -295,7 +292,7 @@ Guardrails were added to reduce hallucinated queries.
 
 ---
 
-# Running the Project
+## Running the Project
 
 ### 1. Install dependencies
 
@@ -324,7 +321,7 @@ python rag_pipeline.py
 
 ---
 
-# Key Takeaways
+## Key Takeaways
 
 This project highlights how **LLMs can enable natural language interfaces for structured data systems**.
 
@@ -336,7 +333,7 @@ Key findings:
 
 ---
 
-# Future Improvements
+## Future Improvements
 
 Possible extensions include:
 
@@ -347,13 +344,13 @@ Possible extensions include:
 
 ---
 
-# Contributors
+## Contributors
 
 - Arpana Koilada  
 - Veda Janga  
 
 ---
 
-# License
+## License
 
 MIT License
